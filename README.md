@@ -12,7 +12,6 @@ Instead of relying solely on standard steady-state calibration or direct OLS on 
 
 The workflow is divided into data acquisition, model simulation, and parameter estimation. 
 
-* `get_data.py`: Python script used to fetch, clean, and preprocess the macroeconomic time series, applying the necessary detrending (e.g., HP filter) to isolate the cyclical components.
 * `us_data.csv`: The processed dataset containing the cyclical components of US macroeconomic variables used as empirical targets for the SMM procedure. Although controversial, I have used the HP Filter to extract the business cycle time series.
 * `RBC_smm.mod`: The Dynare model file structured specifically for the SMM estimation. It contains the log-linearized equations of the RBC model and computes the theoretical moments.
 * `SMM.m`: The main MATLAB script that executes the Simulated Method of Moments. It iteratively calls Dynare, compares the simulated moments to the empirical data in `us_data.csv`, and optimizes the parameters.
