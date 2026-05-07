@@ -40,9 +40,3 @@ To run this project, you will need the following software:
 * **Python 3.x**: With `pandas` and `numpy` installed (for `get_data.py`).
 * **MATLAB** (or Octave).
 * **Dynare**: A pre-processor and collection of MATLAB routines for solving DSGE models. Ensure Dynare is properly added to your MATLAB path.
-
-## Usage
-
-1. Data Preparation: Run the Python script to fetch and format the latest macroeconomic data (or simply use the provided `us_data.csv`).
-   ```bash
-   python get_data.py
